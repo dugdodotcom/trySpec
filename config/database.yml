@@ -1,0 +1,32 @@
+# # Using MySql
+ reconnect: true
+ default: &default
+   adapter: mysql2
+   encoding: utf8
+   pool: 5
+   socket: /tmp/mysql.sock
+
+ development:
+   <<: *default
+   username: root
+   password: root
+   host: 127.0.0.1
+   port: 8889
+   database: TryRspec_development
+
+ test:
+   <<: *default
+   username: root
+   password: root
+   host: 127.0.0.1
+   port: 8889
+   database: TryRspec_test
+
+ production:
+  <<: *default
+  database: TryRspec_production
+  username: ENV["EXTRANETDB_USER"]
+  password: ENV["EXTRANETDB_PWD"]
+  host: ENV["EXTRANETDB_HOST"]
+  port: ENV["EXTRANETDB_PORT"]
+

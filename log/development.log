@@ -1,0 +1,421 @@
+Started GET "/" for ::1 at 2017-02-09 14:07:26 +0700
+  
+ActiveRecord::NoDatabaseError (Unknown database 'tryrspec_development'):
+  
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:29:in `rescue in mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:12:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.5ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (103.8ms)
+Started GET "/" for ::1 at 2017-02-09 14:08:09 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/railties-5.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.6ms)
+Completed 200 OK in 31ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-09 14:08:43 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/groups"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.4ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.0ms)
+Started GET "/" for ::1 at 2017-02-09 16:18:33 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 1728ms (Views: 1722.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 16:20:29 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 386ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (SyntaxError: [stdin]:1:1: unexpected .):
+     5:     <%= csrf_meta_tags %>
+     6: 
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+     9:   </head>
+    10: 
+    11:   <body>
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__3761944025981012219_70207769892160'
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (91.6ms)
+Started GET "/" for ::1 at 2017-02-09 16:21:51 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 212ms (Views: 199.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 16:26:17 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 474ms (Views: 454.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 16:26:45 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 59ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 16:26:55 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 17:25:12 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 329ms (Views: 320.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 17:27:08 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 421ms (Views: 418.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-02-09 17:34:06 +0700
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 714ms (Views: 701.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-09 17:34:17 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/groups"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [1 times] (23.2ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (137.5ms)
+Started GET "/groups" for ::1 at 2017-02-10 09:00:17 +0700
+  
+Mysql2::Error (Can't connect to MySQL server on '127.0.0.1' (61)):
+  
+mysql2 (0.3.20) lib/mysql2/client.rb:70:in `connect'
+mysql2 (0.3.20) lib/mysql2/client.rb:70:in `initialize'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `new'
+activerecord (5.0.1) lib/active_record/connection_adapters/mysql2_adapter.rb:25:in `mysql2_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.1) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.1) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.2) lib/puma/configuration.rb:225:in `call'
+puma (3.6.2) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.2) lib/puma/server.rb:415:in `process_client'
+puma (3.6.2) lib/puma/server.rb:275:in `block in run'
+puma (3.6.2) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Al-tripcribs/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.7ms)
+Started GET "/groups" for ::1 at 2017-02-10 09:00:26 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 648ms (Views: 633.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 10:27:36 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 120ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/them/groups" for ::1 at 2017-02-10 10:33:20 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"them/groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups" for ::1 at 2017-02-10 10:33:26 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups.html" for ::1 at 2017-02-10 10:34:08 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (0.6ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups" for ::1 at 2017-02-10 10:34:16 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 10:34:23 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 295ms (Views: 293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:37:55 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 291ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:40:59 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:41:24 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:42:06 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 70ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:43:39 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 398ms (Views: 396.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 15:44:27 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups" for ::1 at 2017-02-10 15:44:28 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (0.6ms)
+Completed 200 OK in 7ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 16:14:09 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 286ms (Views: 260.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups" for ::1 at 2017-02-10 16:14:11 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (0.8ms)
+Completed 200 OK in 15ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for ::1 at 2017-02-10 16:14:40 +0700
+Processing by ApplicationController#index as HTML
+  Parameters: {"path"=>"groups"}
+  Rendering application/index.html.erb within layouts/application
+  Rendered application/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 166ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/theme/groups" for ::1 at 2017-02-10 16:14:41 +0700
+Processing by TemplatesController#groups as HTML
+  Rendering templates/groups.html.erb
+  Rendered templates/groups.html.erb (0.7ms)
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
